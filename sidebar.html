@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sidebar Bloxd.io</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background: #0b0f1a;
+        color: #e8eefc;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        background: #111729;
+        border-right: 1px solid #1d2640;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .brand {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .server-info {
+        background: #0f1424;
+        border: 1px solid #1d2640;
+        border-radius: 12px;
+        padding: 14px;
+      }
+
+      .server-info span {
+        display: block;
+        font-size: 12px;
+        opacity: 0.7;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: inherit;
+        padding: 10px 12px;
+        border-radius: 10px;
+        background: #121a30;
+        border: 1px solid transparent;
+        transition: 0.2s ease;
+      }
+
+      .nav a:hover {
+        border-color: #2b3b68;
+        background: #162041;
+      }
+
+      .cta {
+        margin-top: auto;
+        background: linear-gradient(135deg, #4a6cff, #8a5bff);
+        color: white;
+        padding: 12px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .content {
+        padding: 24px 32px;
+      }
+
+      .content h1 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">Bloxd.io | Private</div>
+      <div class="server-info">
+        <strong>Servidor</strong>
+        <span>Región: SA</span>
+        <span>Modo: Survival</span>
+      </div>
+      <nav class="nav">
+        <a href="#">Inicio</a>
+        <a href="#">Reglas</a>
+        <a href="#">Eventos</a>
+        <a href="#">Tienda</a>
+        <a href="#">Discord</a>
+      </nav>
+      <div class="cta">Jugar ahora</div>
+    </aside>
+    <main class="content">
+      <h1>Tu contenido aquí</h1>
+      <p>
+        Copia este archivo tal cual y personaliza los enlaces, el nombre del servidor y los colores.
+      </p>
+    </main>
+  </body>
+</html>
